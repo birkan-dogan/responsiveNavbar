@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif;
+}
+nav {
+  display: flex;
+  /* box-shadow: 5px 5px 5px 5px rgba(160, 159, 159, 0.5); */
+  margin-top: 10rem;
+  align-items: center;
+}
+nav .image {
+  background-color: rgb(172, 185, 201);
+  width: 33.3%;
+}
+nav .linkler {
+  width: 33.4%;
+  background-color: rgb(223, 237, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 5px 5px rgba(160, 159, 159, 0.5);
+  border-radius: 0.5rem;
+  transform: scaleY(1.5);
+}
+nav .linkler a {
+  text-decoration: none;
+  color: rgb(87, 87, 87);
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin: 1rem;
+  transition: all 0.5s;
+  /* width: 7rem; */
+}
+nav .iconlar {
+  background-color: rgb(106, 164, 239);
+  width: 33.3%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.2rem;
+}
+nav .iconlar i {
+  font-size: 2rem;
+  margin: auto 0.2rem;
+  transition: all 0.2s;
+}
+nav .linkler a:hover {
+  background-color: rgb(62, 95, 140);
+  color: white;
+  /* border-radius: 0.5rem; */
+  padding: 0.5rem 0rem;
+}
+
+nav .iconlar i:hover {
+  box-shadow: 1px 1px 1px 1px black;
+  font-size: 2.2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 760px) {
+  .linkler {
+    flex-direction: column;
+    transform: scale(0, 2);
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 396px) {
+  .iconlar i {
+    display: none;
+  }
+}
